@@ -93,7 +93,7 @@ WSGI_APPLICATION = 'lms.wsgi.application'
 
 import dj_database_url
 
-DATABASES['default'] = dj_database_url.config(default='postgres://...'}
+DATABASES['default'] = dj_database_url.config(default='postgres://...')
 
 
 # Password validation
