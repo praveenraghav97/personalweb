@@ -17,7 +17,7 @@ def projects_home(request):
 def create_project(request):
     context = {}
     if request.method == 'POST':
-        if User.username == 'praveenraghav04@gmail.com':
+        if auth.user.email == 'praveenraghav04@gmail.com':
             title = request.POST['title']
             description = request.POST['description']
 
