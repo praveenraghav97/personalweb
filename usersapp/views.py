@@ -35,7 +35,7 @@ def signup(request):
         email = request.POST['email']
         password1 = request.POST['password1']
         password2 = request.POST['password2']
-        if User.objects.filter(email=email).exists():
+        if User.objects.filter(username=email).exists():
             messages.error(request, 'Dear ' + first_name + '!, I think you are registered already..Can you please'
                                                            ' try Login!!')
             return redirect('users:signup')
